@@ -8,9 +8,17 @@ namespace CheapLoansApp
 {
     public class CalcMethods
     {
+        /// <summary>
+        /// Calculate the montholy payments of a loan
+        ///
+        /// </summary>
+        /// <param name="rate"></param> interest rate
+        /// <param name="loanAmt"></param> loan amout
+        /// <param name="numPayments"></param> deration of loan (month)
+        /// <returns></returns>
         public static double CalcPayment(double rate, double loanAmt, int numPayments)
         {
-            return Math.Round(-Financial.Pmt(rate / 12, numPayments, loanAmt), 2);
+            return Math.Round(-Financial.Pmt(rate / 1200, numPayments, loanAmt), 2);
         }
     }
 }

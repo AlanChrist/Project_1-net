@@ -6,15 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CheapLoansApp.Tests
+namespace MainForm.Tests
 {
-    [TestClass]
-    public class CalcMethodsTests
+    [TestClass()]
+    public class MainFormTests
     {
         [TestMethod()]
         public void CalcPaymentTest()
         {
-            Assert.AreEqual(93.22, CalcMethods.CalcPayment(.045, 5000, 60));
+            Assert.AreEqual(93.22, CalcMethods.CalcPayment(4.5, 5000, 60));
         }
     }
 }

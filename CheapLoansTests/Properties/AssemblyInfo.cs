@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CheapLoansAppTests")]
+[assembly: AssemblyTitle("CheapLoansTests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Razer")]
-[assembly: AssemblyProduct("CheapLoansAppTests")]
+[assembly: AssemblyProduct("CheapLoansTests")]
 [assembly: AssemblyCopyright("Copyright © Razer 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c70150f2-9c41-4e72-b988-a3b6df3b90c8")]
+[assembly: Guid("071c3a31-2f2a-45e3-886d-bf5c8bd5092c")]
 
 // Version information for an assembly consists of the following four values:
 //

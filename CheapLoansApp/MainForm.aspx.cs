@@ -17,14 +17,13 @@ namespace CheapLoansApp
 
         protected void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            double rate = Double.Parse(TextBoxRate.Text) / 100;
+            double rate = Double.Parse(TextBoxRate.Text);
             double loanAmt = Double.Parse(TextBoxLoan.Text);
             int numPayments = int.Parse(TextBoxNumPay.Text);
 
             string monthly = CalcMethods.CalcPayment(rate, loanAmt, numPayments).ToString("0.00");
 
             LabelMonthly.Text = "Your monthly payment will be:<br />$" + monthly.ToString();
-            string ratse = (Double.Parse(TextBoxRate.Text) / 100).ToString();
         }
 
         protected void ButtonSave_Click(object sender, EventArgs e)
