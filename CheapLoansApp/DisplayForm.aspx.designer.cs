@@ -33,22 +33,31 @@ namespace CheapLoansApp
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// LoanDataSource control.
+        /// LoanDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource LoanDataSource;
+        protected global::System.Web.UI.WebControls.SqlDataSource LoanDataSource1;
 
         /// <summary>
-        /// LinqDataSource1 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinqDataSource LinqDataSource1;
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
+        /// LoanDataSource0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource LoanDataSource0;
 
         /// <summary>
         /// ButtonHome control.

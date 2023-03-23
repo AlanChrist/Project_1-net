@@ -43,9 +43,5 @@ namespace CheapLoansApp
             Response.Redirect("DisplayForm.aspx");
             //control to show total loan amounts (LINQ statement)
         }
-        public static double CalcPayment(double rate, double loanAmt, int numPayments)
-        {
-            return Math.Round(-Financial.Pmt(rate / 12, numPayments, loanAmt), 2);
-        }
     }
 }

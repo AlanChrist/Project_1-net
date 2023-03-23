@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace CheapLoansApp
 {
@@ -12,13 +14,17 @@ namespace CheapLoansApp
         /// Calculate the montholy payments of a loan
         ///
         /// </summary>
-        /// <param name="rate"></param> interest rate
-        /// <param name="loanAmt"></param> loan amout
-        /// <param name="numPayments"></param> deration of loan (month)
-        /// <returns></returns>
+        /// 
+        /// <param name="rate">interest rate (%)</param> 
+        /// <param name="loanAmt">loan amout ($)</param> 
+        /// <param name="numPayments">deration of loan (month)</param> 
+        /// 
+        /// <returns>monthly loan payment</returns>
         public static double CalcPayment(double rate, double loanAmt, int numPayments)
         {
             return Math.Round(-Financial.Pmt(rate / 1200, numPayments, loanAmt), 2);
         }
+
+        
     }
 }
