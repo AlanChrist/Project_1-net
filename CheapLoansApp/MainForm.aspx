@@ -32,7 +32,14 @@
             <asp:Button ID="ButtonSubmit" runat="server" Text="Submit" OnClick="ButtonSubmit_Click" />
             <asp:Button ID="ButtonSave" runat="server" Text="Save" OnClick="ButtonSave_Click" />
             <asp:Button ID="ButtonDisplay" runat="server" Text="Display Loans" OnClick="ButtonDisplay_Click" />
-            <asp:SqlDataSource ID="SqlDataSourceLoans" runat="server" ConnectionString="<%$ ConnectionStrings:CheapLoansConnectionString %>" SelectCommand="SELECT * FROM [Loans]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSourceLoans" runat="server" ConnectionString="<%$ ConnectionStrings:CheapLoansConnectionString %>" SelectCommand="ProcInsertLoan" SelectCommandType="StoredProcedure">
+                <SelectParameters>
+                    <asp:Parameter Name="p_CustName" Type="String" />
+                    <asp:Parameter Name="p_LoanAmount" Type="Decimal" />
+                    <asp:Parameter Name="p_AnnualIntRate" Type="Decimal" />
+                    <asp:Parameter Name="p_NumPayments" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
             <br /><br />
             <asp:Label ID="LabelMonthly" runat="server" Text=""></asp:Label>
 

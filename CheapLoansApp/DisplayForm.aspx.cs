@@ -32,8 +32,6 @@ namespace CheapLoansApp
         {
             DataView dv = (DataView)LoanDataSource0.Select(DataSourceSelectArguments.Empty);
             DataTable dt = dv.Table;
-
-
             Label1.Text = dt.AsEnumerable().Average(row => row.Field<Decimal>(0)).ToString();
         }
     }
